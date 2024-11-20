@@ -530,18 +530,25 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
+
 @media (max-width:991px) {
-    .aboutHead, .productHead, .servicetHead{
+
+    .aboutHead,
+    .productHead,
+    .servicetHead {
         padding: 5em 0 5em 0 !important;
-    } 
-    .messageWrap{
+    }
+
+    .messageWrap {
         width: 85% !important;
         word-break: keep-all;
     }
+
     .messageBox span.ceoName {
-        padding-right: 0em !important; 
+        padding-right: 0em !important;
     }
 }
+
 .productHead {
     width: 100%;
     height: 100%;
@@ -696,6 +703,34 @@ section.message,
     padding-top: 5em;
 }
 
+@media (max-width:991px) {
+    .esgBox {
+        width: 100%;
+        max-width: 991px;
+    }
+
+    .visionBox {
+        width: 100%;
+        margin-left: 2em !important;
+    }
+
+    .visionBox h2,
+    .missionBox h2 {
+        font-size: 1.5em !important;
+    }
+
+    .missionBox {
+        width: 100%;
+        text-align: right;
+        margin-right: 2em !important;
+    }
+
+    .missionBox .esgTitle {
+        width: 100%;
+        margin-right: 3em !important;
+    }
+}
+
 .esgTitle {
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
     padding-bottom: 1em;
@@ -747,13 +782,73 @@ section.message,
     line-height: 1.5;
 }
 
-.historyBox .year {
-    width: 100%;
-    position: relative;
-    padding-top: 5em;
-    box-sizing: border-box;
-    display: flex;
+@media (max-width:991px) {
+    .pcver {
+        display: none;
+    }
+
+    .mobilever {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .comHistory {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        margin: 0 1em;
+    }
+
+    .comHistory .year {
+        font-size: 3em;
+        font-weight: lighter;
+    }
+
+    .float {
+        width: 100%;
+        display: flex;
+    }
+
+    .titleMonth {
+        width: 10%;
+
+    }
+
+    .txt {
+        width: 90%;
+    }
+
+    .comHistory>li {
+        margin-bottom: 3em;
+    }
+
+    .historyImg {
+        width: 90% !important;
+    }
+
+    .historyImg img {
+        width: 100%;
+    }
+
 }
+
+@media (min-width:992px) {
+    .mobilever {
+        display: none;
+    }
+
+    .historyBox .year {
+        width: 100%;
+        position: relative;
+        padding-top: 5em;
+        box-sizing: border-box;
+        display: flex;
+
+    }
+}
+
+
 
 .historyBox .year .leftBox {
     width: 50%;
@@ -791,7 +886,8 @@ section.message,
     margin-top: 1em;
 }
 
-.leftBox .yearText .month {
+.leftBox .yearText .month,
+.titleMonth {
     color: #A8A8A8;
     margin-left: 0.5em;
     font-weight: bold;
@@ -815,6 +911,7 @@ section.message,
 .historyImg {
     width: 100%;
     margin-top: 1em;
+    list-style: none;
 }
 
 .historyImg img {
@@ -830,10 +927,72 @@ section.message,
 .orgaImgBox {
     text-align: center;
     margin-top: 3em;
+    width: 100%;
 }
 
+.orgaImgBox img {
+    width: 95%;
+    margin: 0 0.5em;
+    text-align: center;
+}
 
 /* 주요 장비 */
+@media (max-width:991px) {
+    .equipWrap {
+        width: 100%;
+        max-width: 991px !important;
+    }
+
+    .equipImgBox {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+
+    .equipImg {
+        width: 90%;
+        max-width: 991px !important;
+        margin: 0 auto;
+        text-align: center;
+        display: block;
+        height: auto;
+        padding: 2em 0;
+    }
+
+    .equipImg span {
+        width: 25%;
+    }
+
+    .equipImg.pcver {
+        display: none;
+    }
+
+    .eq {
+        width: 25% !important;
+        text-align: center;
+        display: flex;
+        float: left;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+    }
+
+    .eqipBtn {
+        width: 100%;
+        display: block;
+        margin-top: 3em;
+    }
+}
+
+@media (min-width:992px) {
+    .equipImg.mobilever {
+        display: none;
+    }
+}
+
 .equipImg {
     width: 100%;
 }
@@ -873,6 +1032,7 @@ section.message,
 
 .eqipBtn {
     width: 100%;
+    display: block;
 }
 
 .eqipBtn .Btn {
@@ -906,6 +1066,17 @@ section.message,
     max-width: 1440px;
 }
 
+@media (max-width:991px) {
+    .records {
+        padding-top: 5em;
+    }
+
+    .recordWrap .leftBox {
+        width: 80% !important;
+        height: 200px !important;
+    }
+}
+
 .recordWrap .leftBox {
     width: 40%;
     height: 300px;
@@ -926,6 +1097,23 @@ section.message,
     right: 0;
     z-index: -1;
     text-align: right;
+}
+
+@media (max-width:991px) {
+
+    .recordWrap .righrBox {
+        width: 100%;
+        float: right;
+        position: absolute;
+        top: 8em;
+        right: 0;
+        z-index: -1;
+        text-align: right;
+    }
+
+    .recordWrap .righrBox img {
+        width: 100%;
+    }
 }
 
 .recodBtn .contactBtn {
@@ -954,6 +1142,20 @@ section.message,
 .subText div {
     padding-bottom: 1.5em;
     font-size: 1.2em;
+}
+
+@media (max-width:991px) {
+    .subText div {
+        padding-bottom: 1.5em;
+        font-size: 1em;
+    }
+
+    .locationWrap {
+        width: 90%;
+        padding: 5em 0;
+        margin: 0 auto;
+        word-break: keep-all;
+    }
 }
 
 .subText div i {
@@ -1096,17 +1298,19 @@ section.message,
 }
 
 @media (max-width:991px) {
-    .formTitle{
+    .formTitle {
         width: 100%;
         text-align: center;
         margin-left: 0;
         margin-right: 0;
         font-size: 1.2em;
     }
-    .contact-us .inner-content>.row{
+
+    .contact-us .inner-content>.row {
         margin: 0;
         display: flex;
     }
+
     .contact-head .row {
         margin-left: 0;
         margin-right: 0;
