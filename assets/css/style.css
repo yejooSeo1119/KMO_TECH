@@ -1100,7 +1100,6 @@ section.message,
 }
 
 @media (max-width:991px) {
-
     .recordWrap .righrBox {
         width: 100%;
         float: right;
@@ -1110,7 +1109,6 @@ section.message,
         z-index: -1;
         text-align: right;
     }
-
     .recordWrap .righrBox img {
         width: 100%;
     }
