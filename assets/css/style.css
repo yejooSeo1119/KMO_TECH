@@ -212,38 +212,61 @@
     background-color: rgba(4, 64, 64, 0.7);
 }
 
-@media (max-width :991px){
+@media (max-width :991px) {
     .businessBoxWrap {
-        width:900px;
+        width: 900px;
         height: 100%;
         margin: 0 auto;
         position: relative;
         display: block;
         padding: 0 0 8em 0;
     }
-    .businessBox{
 
+    .businessBox {
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
     }
 
-.businessBoxWrap {
-    width: 100%;
-    max-width: 800px;
-    height: 100%;
-    margin: 0 auto;
-    position: relative;
-    display: block;
-    padding: 0 0 8em 0;
-}
+    .businessBoxWrap {
+        width: 100%;
+        max-width: 800px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+        display: block;
+        padding: 0 0 8em 0;
+    }
+
     .box-color {
         box-sizing: border-box;
-        padding: 60px 12.5px 30px;
+        padding: 20px 12.5px 20px;
         width: 100%;
-        height: 100%;
         text-shadow: 0 3px 3px rgba(0, 0, 0, 0.25);
         border-radius: 5px;
+        margin-bottom: 20px;
     }
-    
+
+    .businessBox .box01,
+    .businessBox .box02,
+    .businessBox .box03,
+    .businessBox .box04 {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .box-color .Titillium {
+        padding: 0 !important;
+    }
+
+    .bottom {
+        float: right;
+        text-align: center;
+    }
 }
+
 .box-color .Titillium {
     font-size: 3em;
     font-family: "Titillium Web", serif;
@@ -264,6 +287,36 @@
 
 
 /* about */
+@media (max-width :991px) {
+    .about .aboutWrap {
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+        margin: 5em 0;
+        box-sizing: border-box;
+        display: flex;
+    }
+
+    .about .aboutWrap ul {
+        width: 100%;
+        flex-direction: column-reverse !important;
+        flex-wrap: nowrap;
+        align-content: center;
+        align-items: flex-start !important;
+        margin: 0 2em;
+        box-sizing: border-box;
+    }
+
+    .about .aboutWrap ul li {
+        width: 100% !important;
+        justify-content: flex-start !important;
+    }
+
+    .aboutImg img {
+        width: 100%;
+    }
+}
+
 .about {
     width: 100%;
     height: 100%;
@@ -345,6 +398,17 @@
     background-color: #fff !important;
 }
 
+.section-title .Titillium {
+    font-size: 40px;
+}
+
+@media (max-width:991px) {
+    .portfolio-section .portfolio-btn-wrapper button {
+        padding: 4px 8px;
+    }
+
+}
+
 .contact {
     width: 100%;
     height: 100%;
@@ -352,6 +416,12 @@
     padding: 1em 0;
     box-sizing: border-box;
     display: block;
+}
+
+@media (max-width:991px) {
+    .btnBox {
+        width: 100% !important;
+    }
 }
 
 .bgBox {
@@ -431,7 +501,22 @@
     color: #575757;
 }
 
+@media (max-width:991px) {
+    .footWrap ul {
+        margin: 0 2em;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
 
+    .footWrap ul li {
+        padding-bottom: 0.5em;
+    }
+
+    .footWrap>p {
+        margin: 0 2em;
+    }
+}
 
 
 /* 기업소개 */
@@ -445,7 +530,18 @@
     background-repeat: no-repeat;
     background-size: cover;
 }
-
+@media (max-width:991px) {
+    .aboutHead, .productHead, .servicetHead{
+        padding: 5em 0 5em 0 !important;
+    } 
+    .messageWrap{
+        width: 85% !important;
+        word-break: keep-all;
+    }
+    .messageBox span.ceoName {
+        padding-right: 0em !important; 
+    }
+}
 .productHead {
     width: 100%;
     height: 100%;
@@ -508,6 +604,7 @@ section.message,
     max-width: 1000px;
     padding: 5em 0;
     margin: 0 auto;
+    word-break: keep-all;
 }
 
 .historyWrap,
@@ -967,30 +1064,51 @@ section.message,
     padding: 1em 0 2em 0;
     font-size: 1.5em;
 }
+
 .contact-head {
     width: 100%;
     max-width: 1000px;
     margin: 0 auto;
 }
+
 .contact-head .row {
     justify-content: center;
 }
+
 .button.style3 .btn {
     background: transparent;
     border: 1px solid #575757 !important;
     color: #000;
 }
 
-.button.style3 .btn:hover{
+.button.style3 .btn:hover {
     background-color: rgba(35, 64, 67, 0.1) !important;
     color: #000;
 }
 
-.formTitle h3{
+.formTitle h3 {
     font-size: 1em;
 }
 
-.contact-us .form-main{
+.contact-us .form-main {
     margin: 0 !important;
     padding: 0 !important;
+}
+
+@media (max-width:991px) {
+    .formTitle{
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+        margin-right: 0;
+        font-size: 1.2em;
+    }
+    .contact-us .inner-content>.row{
+        margin: 0;
+        display: flex;
+    }
+    .contact-head .row {
+        margin-left: 0;
+        margin-right: 0;
+    }
 }

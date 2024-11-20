@@ -5716,31 +5716,31 @@ ol {
   }
   .header .navbar-area.sticky .navbar-nav .nav-item a:hover {
     color: #fff !important;
-    background-color: #6831e3;
+    background-color: #f2f2f2;
   }
   .header.style2 .navbar-area .navbar-nav .nav-item a:hover {
     color: #fff !important;
-    background-color: #018bff;
+    background-color: #f2f2f2;
   }
   .header.style2 .navbar-area.sticky .navbar-nav .nav-item a:hover {
     color: #fff !important;
-    background-color: #018bff;
+    background-color: #f2f2f2;
   }
   .header.style3 .navbar-area .navbar-nav .nav-item a:hover {
     color: #fff !important;
-    background-color: #4567f4;
+    background-color: #f2f2f2;
   }
   .header.style3 .navbar-area.sticky .navbar-nav .nav-item a:hover {
-    color: #fff !important;
-    background-color: #4567f4;
+    color: #000 !important;
+    background-color: #f2f2f2;
   }
   .header.style4 .navbar-area .navbar-nav .nav-item a:hover {
-    color: #fff !important;
-    background-color: #45a247;
+    color: #000 !important;
+    background-color: #f2f2f2;
   }
   .header.style4 .navbar-area.sticky .navbar-nav .nav-item a:hover {
-    color: #fff !important;
-    background-color: #45a247;
+    color: #000 !important;
+    background-color: #f2f2f2;
   }
   .navbar-toggler {
     background: transparent;
@@ -5786,14 +5786,16 @@ ol {
   }
   .header .navbar-nav .nav-item a:hover {
     color: #fff !important;
-    background-color: #6831e3;
+    background-color: #f2f2f2;
     border-color: transparent;
   }
   .header .navbar-nav .nav-item a.active {
-    color: #081828;
+    color: #234043;
+    background-color: #f2f2f2;
   }
   .header .navbar-nav .nav-item a.active:hover {
     color: #fff;
+    background-color: #f2f2f2;
   }
   .navbar-collapse {
     padding: 12px;
